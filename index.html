@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Foul Detection System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Football Foul Detection System</h1>
+
+        <p>
+          Sistem berbasis Deep Learning yang mampu mendeteksi pelanggaran
+          tackling dalam pertandingan sepak bola menggunakan CNN dan LSTM.
+        </p>
+
+        </div>
+    </section>
+
+    <div class="container">
+      <!-- Statistik -->
+      <section class="dashboard">
+        <div class="stat">
+          <h3>600</h3>
+          <p>Total Dataset</p>
+        </div>
+
+        <div class="stat">
+          <h3>320</h3>
+          <p>Clean Tackle</p>
+        </div>
+
+        <div class="stat">
+          <h3>280</h3>
+          <p>Foul Tackle</p>
+        </div>
+
+        <div class="stat">
+          <h3>96%</h3>
+          <p>Accuracy</p>
+        </div>
+      </section>
+
+      <!-- Upload -->
+      <section class="glass-card">
+        <h2>Upload Video Pertandingan</h2>
+
+        <div class="upload-area">
+          <div class="upload-icon">⚽</div>
+
+          <h3>Upload Video Tackling</h3>
+
+          <p>Pilih video pertandingan untuk dianalisis oleh model CNN-LSTM</p>
+
+          <input type="file" accept="video/*" />
+
+          <button>Analisis Video</button>
+        </div>
+      </section>
+
+      <!-- Hasil -->
+      <section class="glass-card">
+        <h2>Hasil Prediksi</h2>
+
+        <div class="result-box">
+          <div class="prediction">FOUL TACKLE</div>
+
+          <div class="confidence">Confidence Score : 87%</div>
+
+          <div class="progress">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tentang Tackling -->
+      <section class="glass-card">
+        <h2>Tentang Tackling</h2>
+
+        <p>
+          Tackling merupakan teknik dalam sepak bola yang digunakan untuk
+          merebut bola dari lawan. Tackling dapat dikategorikan menjadi Clean
+          Tackle dan Foul Tackle.
+        </p>
+
+        <div class="info-grid">
+          <div class="info-box">
+            <h3>✅ Clean Tackle</h3>
+            <p>
+              Tackle yang dilakukan sesuai aturan dan berhasil merebut bola
+              tanpa pelanggaran.
+            </p>
+          </div>
+
+          <div class="info-box">
+            <h3>❌ Foul Tackle</h3>
+            <p>
+              Tackle yang melanggar aturan, mengenai kaki lawan, atau berpotensi
+              menyebabkan cedera.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CNN -->
+      <section class="glass-card">
+        <h2>Convolutional Neural Network (CNN)</h2>
+
+        <p>
+          CNN digunakan untuk mengekstraksi fitur visual dari setiap frame video
+          pertandingan sepak bola.
+        </p>
+
+        <div class="feature-list">
+          <div class="feature">Posisi Pemain</div>
+          <div class="feature">Arah Gerakan</div>
+          <div class="feature">Kontak Antar Pemain</div>
+          <div class="feature">Ekstraksi Fitur Visual</div>
+        </div>
+      </section>
+
+      <!-- LSTM -->
+      <section class="glass-card">
+        <h2>Long Short-Term Memory (LSTM)</h2>
+
+        <p>
+          LSTM digunakan untuk memahami urutan gerakan antar frame sehingga
+          sistem mampu mengenali pola tackling secara lebih akurat.
+        </p>
+
+        <div class="feature-list">
+          <div class="feature">Analisis Sequence</div>
+          <div class="feature">Hubungan Antar Frame</div>
+          <div class="feature">Pola Tackling</div>
+          <div class="feature">Prediksi Pelanggaran</div>
+        </div>
+      </section>
+
+      <!-- Workflow -->
+      <section class="glass-card">
+        <h2>Cara Kerja Sistem</h2>
+
+        <div class="flow">
+          <div class="step">Upload Video</div>
+
+          <div class="line"></div>
+
+          <div class="step">Frame Extraction</div>
+
+          <div class="line"></div>
+
+          <div class="step">CNN</div>
+
+          <div class="line"></div>
+
+          <div class="step">LSTM</div>
+
+          <div class="line"></div>
+
+          <div class="step">Prediction</div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      Football Foul Detection System © 2026
+      <br />
+      Deep Learning Project - CNN + LSTM
+    </footer>
+  </body>
+</html>
